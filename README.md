@@ -140,7 +140,7 @@ Add a direct http announcement (optional) and Reframe configuration:
 $ vim ~/.index-provider/config
 ```
 
-Add the following configuration block replacing the ProviderID with the one grabbed at the previous step: 
+Add the following configuration block replacing the ProviderID with the kubo node peer ID grabbed at the previous step: 
 
 ```
  "DirectAnnounce": {
@@ -152,7 +152,7 @@ Add the following configuration block replacing the ProviderID with the one grab
     "ListenMultiaddr": "/ip4/127.0.0.1/tcp/50617",
     "ChunkSize": 1,
     "SnapshotSize": 100,
-    "ProviderID": "12D3KooWKZA9t5VoXwRydUKNkmmYoqB2dQTt6B4qVxfFuiwiGbtj", 
+    "ProviderID": "KUBO_NODE_PEER_ID", 
     "Addrs": [         
       "/ip4/0.0.0.0/tcp/4001",
       "/ip6/::/tcp/4001",
