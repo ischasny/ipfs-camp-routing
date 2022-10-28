@@ -51,7 +51,7 @@ $ ipfs init
 Setup a custom routing by adding the following configuration block into `~/.ipfs/config`
 
 ```
-"Routing": {
+ipfs config Routing --json  '{
   "Type": "custom",
   "Methods": {
     "find-peers": {
@@ -104,8 +104,7 @@ Setup a custom routing by adding the following configuration block into `~/.ipfs
       "Type": "dht"
     }
   }
-},
-
+}'
 ```
 
 Start the IPFS node:
@@ -141,7 +140,7 @@ Add a direct http announcement (optional) and Reframe configuration:
 $ vim ~/.index-provider/config
 ```
 
-Add the following configuration blocks: 
+Add the following configuration block replacing the ProviderID with the one grabbed at the previous step: 
 
 ```
  "DirectAnnounce": {
