@@ -58,7 +58,7 @@ ipfs config Routing --json  '{
       "RouterName": "WanDHT"
     },
     "find-providers": {
-      "RouterName": "WanDHT"
+      "RouterName": "ParallelHelper"
     },
     "get-ipns": {
       "RouterName": "WanDHT"
