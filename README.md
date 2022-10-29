@@ -182,6 +182,11 @@ Check whether your cid got indexed by executing
 $ storetheindex find --cid
 ```
 
+Or look it up in Kubo
+
+```
+ipfs routing findprovs YOUR_CID
+```
  
 
 
